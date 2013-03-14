@@ -1,0 +1,120 @@
+GFORTRAN module version '9' created from params.f90
+MD5:2def72de812a0c9351a66a0930574e6e -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+()
+
+(2 'bc' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+3 'cfl' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+4 'derorder' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+5 'dim' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+6 'disip' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+7 'e' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+8 'freq' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+9 'idsignum' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+10 'idtype' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+11 'l' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+12 'm' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+13 'm_pars' 'm_pars' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+14 'nt' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+15 'nx' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0
+() () () 0 0)
+16 'phi0' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+17 'pos' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+18 'q' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+19 'readpars' 'm_pars' '' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+UNKNOWN 0 0 SUBROUTINE) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () ()
+0 0)
+20 'rhstype' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 IN_NAMELIST) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+21 'rin' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+22 'robs1' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+23 'robs2' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+24 'robs3' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+25 'robs4' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+26 'robs5' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+27 'rout' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+28 'scalar_charge' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+29 'scalar_mass' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+30 'sep' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+31 'sr0' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+32 'time' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+33 'tot_mas' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+34 'xx0' 'm_pars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 IN_NAMELIST) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () ()
+() 0 0)
+)
+
+('bc' 0 2 'cfl' 0 3 'derorder' 0 4 'dim' 0 5 'disip' 0 6 'e' 0 7 'freq'
+0 8 'idsignum' 0 9 'idtype' 0 10 'l' 0 11 'm' 0 12 'm_pars' 0 13 'nt' 0
+14 'nx' 0 15 'phi0' 0 16 'pos' 0 17 'q' 0 18 'readpars' 0 19 'rhstype' 0
+20 'rin' 0 21 'robs1' 0 22 'robs2' 0 23 'robs3' 0 24 'robs4' 0 25 'robs5'
+0 26 'rout' 0 27 'scalar_charge' 0 28 'scalar_mass' 0 29 'sep' 0 30 'sr0'
+0 31 'time' 0 32 'tot_mas' 0 33 'xx0' 0 34)
