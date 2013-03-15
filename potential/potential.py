@@ -17,7 +17,7 @@ def Veff(q,Q,mu,w,l):
   f = lambda x: 1 - 2/x + Q**2/x**2
   df = lambda x: 2/x**2 - 2*Q**2/x**3
 
-  Veff = lambda x: q*Q/x * (q*Q/x - 2*w) + f(x)*(l*(l+1)/x**2 + mu**2) + f(x)*df(x)/x
+  Veff = lambda x: q*Q/x * (2*w-q*Q/x) + f(x)*(l*(l+1)/x**2 + mu**2) + f(x)*df(x)/x
   plot(rstar(r),Veff(r), label='$q='+str(q)+'$, $Q='+str(Q)+'$, $\mu='+str(mu)+'$, $\omega='+str(w)+'$')
   # axhline(y=-q*Q/rp * (2*w-q*Q/rp),xmin=min(rstar(r)), xmax=max(rstar(r)))
 
