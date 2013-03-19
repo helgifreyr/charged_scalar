@@ -21,6 +21,9 @@ else:
 colors = {'0.800':'cyan', '0.900':'black', '0.950':'green', '0.990':'red', '0.997':'blue'}
 linestyles = {'0.4':'-','0.8':'--','1.0':':','1.2':'-.','1.4':'-', '1.8':'--', '2.0':':', '9.9':':'}
 
+f = figure()
+ax = f.add_subplot(111)
+
 maxy = 0
 for Q in Qs:
   for ratio in ratios:
@@ -34,7 +37,7 @@ for Q in Qs:
       colors[Q] = 'black'
     if nolog == '1':
       # plot(mirror, freq, ls=linestyles[ratio], label='Q='+Q+', ratio='+ratio, color=colors[Q])
-      plot(mirror, freq, label='Q='+Q+', ratio='+ratio, color=colors[Q])
+      plot(mirror, freq, label='Q='+Q, color=colors[Q])
     else:
       if max(freq) > 0:
         # plot(mirror, freq, ls=linestyles[ratio], label='Q='+Q+', ratio='+ratio, color=colors[Q])
@@ -42,7 +45,8 @@ for Q in Qs:
     if max(freq) > maxy:
       maxy = max(freq)
 
-# legend(loc=4)
+if ratios[0] == '2.0':
+  legend(loc=1)
 if nolog == '0':
   yscale('log')
   xscale('log')
@@ -52,9 +56,17 @@ if nolog == '0':
 else:
   xlim(4,80)
   ylim(-1e-9,1.5*maxy)
-xlabel(r'$r_0$')
-ylabel(r'$Im(\omega)$')
+  text(0.07, 0.95,r'$\frac{q}{\mu}='+ratios[0]+'$',
+      horizontalalignment='center',
+      verticalalignment='center',
+      transform = ax.transAxes,
+      fontsize=16)
+xlabel(r'$r_m$',fontsize=22)
+ylabel(r'$Im(\omega)$',fontsize=22)
+axhline(y=0, xmin=0, xmax=50, linestyle='--', color='black')
 if nolog == '0':
   savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'-log.png')
+  savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'-log.eps')
 else:
   savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'.png')
+  savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'.eps')
