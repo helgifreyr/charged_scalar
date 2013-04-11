@@ -32,7 +32,7 @@ def calculate_slope(Q,mu,R):
   Y = Rfreq[eyes]
   X = Rq[eyes]
 
-  wc = [q for q in Y]
+  wc = [q*float(Q)/(1+sqrt(1-float(Q)**2)) for q in Y]
 
   slope = ((X*Y).mean() - X.mean()*Y.mean()) / ((X**2).mean() - (X.mean())**2)
   print 'For \mu='+mu+', Q='+Q+', R='+R+' the slope is ' +'%7.6f' % slope

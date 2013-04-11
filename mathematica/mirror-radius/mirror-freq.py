@@ -14,7 +14,7 @@ if mus == []:
 else:
   mus_text = '-'.join(mus)
 if Qs == []:
-  Qs = ['0.80','0.90','0.95','0.990','0.997']
+  Qs = ['0.90','0.95','0.990','0.997', '1.0']
   Qs_text = 'all'
 else:
   Qs_text = '-'.join(Qs)
@@ -23,8 +23,8 @@ if qs == []:
   qs_text = 'all'
 else:
   qs_text = '-'.join(qs)
-colors = {'0.80':'cyan', '0.90':'black', '0.95':'green', '0.990':'red', '0.997':'blue'}
-linestyles = {'0.6':'-', '0.8':'--', '0.9':':'}
+colors = {'0.90':'black', '0.95':'green', '0.990':'red', '0.997':'blue','1.0':'cyan'}
+linestyles = {'0.90':':', '0.95':'-.', '0.990':'-', '0.997':'--','1.0':'--'}
 
 f = figure()
 ax = f.add_subplot(111)
@@ -40,7 +40,7 @@ for mu in mus:
       mirror = data[:,0]
       freq = data[:,1]
       # plot(mirror, freq, label='Q='+Q+', q='+q+', $\mu$='+mu, color=colors[Q])
-      plot(mirror, freq, label='$Q='+Q+'$', color=colors[Q])
+      plot(mirror, freq, label='$Q='+Q+'$', linestyle=linestyles[Q], color=colors[Q], linewidth=2)
       if max(freq) > maxy:
         maxy = max(freq)
 
@@ -50,13 +50,15 @@ gcf().subplots_adjust(bottom=0.15,left=0.15)
 if sys.argv[1] == 'I':
   # xscale('log')
   yscale('log')
-  ylabel(r'$Im(\omega)$')
-  xlim(4,30)
-  ylim(1e-7,1.1e-5)
+  # ylabel(r'$Im(\omega)$')
+  xlim(3,5)
+  # ylim(5e-6,1.1e-3)
   # yticks([5e-8,1e-7,1e-6,1e-5],['$5\cdot10^{-8}$','$10^{-7}$','$10^{-6}$','$10^{-5}$'])
+  # yticks(concatenate((arange(1,11)*1e-8, arange(1,11)*1e-7, arange(1,11)*1e-6),axis=0))
+  # yticks(concatenate((arange(1,11)*1e-7, arange(1,11)*1e-6),axis=0))
 else:
-  ylabel(r'$Re(\omega)$')
-  xlim(4,30)
+  # ylabel(r'$Re(\omega)$')
+  xlim(2,30)
   ylim(0.2,0.6)
   yticks(arange(4,13)/20.0,[str(i) for i in arange(4,13)/20.0])
 # if mus[0] == '0.1':
@@ -68,7 +70,7 @@ else:
 # elif mus[0] == '0.3':
 #   if qs[0] == '0.6':
 #     legend(loc=1, fontsize=14)
-# legend(fontsize=14)
-xticks(arange(10,40,10),[str(i) for i in arange(10,40,10)])
+legend(loc=4,fontsize=20)
+# xticks(arange(5,35,5),[str(i) for i in arange(5,35,5)])
 savefig(part+'-mu-'+mus_text+'-Q-'+Qs_text+'-q-'+qs_text+'.png')
-savefig(part+'-mu-'+mus_text+'-Q-'+Qs_text+'-q-'+qs_text+'.eps')
+# savefig(part+'-mu-'+mus_text+'-Q-'+Qs_text+'-q-'+qs_text+'.eps')

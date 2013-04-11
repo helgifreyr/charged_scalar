@@ -9,7 +9,7 @@ ratios = raw_input('ratios: ').split()
 Qs = raw_input('Qs: ').split()
 
 if Qs == []:
-  Qs = ['0.800','0.900','0.950','0.990','0.997']
+  Qs = ['0.900','0.950','0.990','0.997']
   Qs_text = 'all'
 else:
   Qs_text = '-'.join(Qs)
@@ -18,8 +18,8 @@ if ratios == []:
   ratios_text = 'all'
 else:
   ratios_text = '-'.join(ratios)
-colors = {'0.800':'cyan', '0.900':'black', '0.950':'green', '0.990':'red', '0.997':'blue'}
-linestyles = {'0.4':'-','0.8':'--','1.0':':','1.2':'-.','1.4':'-', '1.8':'--', '2.0':':', '9.9':':'}
+colors = {'0.900':'black', '0.950':'green', '0.990':'red', '0.997':'blue','1.0':'cyan'}
+linestyles = {'0.900':':', '0.950':'-.', '0.990':'-', '0.997':'--','1.0':'--'}
 
 f = figure()
 ax = f.add_subplot(111)
@@ -36,12 +36,12 @@ for Q in Qs:
     if Q not in colors:
       colors[Q] = 'black'
     if nolog == '1':
-      # plot(mirror, freq, ls=linestyles[ratio], label='Q='+Q+', ratio='+ratio, color=colors[Q])
-      plot(mirror, freq, label='Q='+Q, color=colors[Q])
+      plot(mirror, freq, ls=linestyles[Q], label='Q='+Q, color=colors[Q],linewidth=2)
+      # plot(mirror, freq, label='Q='+Q, color=colors[Q])
     else:
       if max(freq) > 0:
-        # plot(mirror, freq, ls=linestyles[ratio], label='Q='+Q+', ratio='+ratio, color=colors[Q])
-        plot(mirror, freq, label='Q='+Q+', ratio='+ratio, color=colors[Q])
+        plot(mirror, freq, ls=linestyles[Q], label='Q='+Q, color=colors[Q],linewidth=2)
+        # plot(mirror, freq, label='Q='+Q+', ratio='+ratio, color=colors[Q])
     if max(freq) > maxy:
       maxy = max(freq)
 
@@ -66,7 +66,5 @@ ylabel(r'$Im(\omega)$',fontsize=22)
 axhline(y=0, xmin=0, xmax=50, linestyle='--', color='black')
 if nolog == '0':
   savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'-log.png')
-  savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'-log.eps')
 else:
   savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'.png')
-  savefig(part+'-Q-'+Qs_text+'-ratio-'+ratios_text+'.eps')
